@@ -1298,8 +1298,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 /*#name_on_header{
 	float: right;
-    width: calc(100% - 350px - 10px)*/
-}
+    width: calc(100% - 350px - 10px)}*/
 	#menu {
 		@include vendor('transform', 'translateX(20em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
