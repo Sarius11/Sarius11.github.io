@@ -505,6 +505,12 @@ $baseurl: '{{ site.baseurl }}/images';
 
 /* Image */
 
+#logo {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: transparent;}
+
 	.image {
 		border-radius: 3px;
 		border: 0;
@@ -514,7 +520,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		img {
 			border-radius: 3px;
 			display: block;
+
 		}
+
 
 		&.left {
 			float: left;
@@ -1288,7 +1296,10 @@ $baseurl: '{{ site.baseurl }}/images';
 			z-index: _misc(z-index-base) + 1;
 		}
 	}
-
+/*#name_on_header{
+	float: right;
+    width: calc(100% - 350px - 10px)*/
+}
 	#menu {
 		@include vendor('transform', 'translateX(20em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
@@ -1383,6 +1394,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+
 
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
